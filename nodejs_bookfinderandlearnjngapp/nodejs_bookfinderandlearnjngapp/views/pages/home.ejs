@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css"/>
+    <link rel="icon" type="image/icon" sizes="32x32" href="/media/favicon.ico">
+    <title>Book Finder</title>
+</head>
+<header>
+    <form id="searchForm" class="searchForm">
+        <select name="searchSelect" id="searchSelect">
+            <option value="" selected>All</option>
+            <option value="intitle">Title</option>
+            <option value="inauthor">Author</option>
+            <option value="inpublisher">Publisher</option>
+            <option value="subject">Subject</option>
+        </select>
+        <input id="inputSearch" placeholder="Search for a book"></input>
+        <button id="searchBTN" type="button">Search</button>
+    </form>
+</header>
+<body class="parallax">
+    <main>
+        <div id="books" class="bookContainer">
+        </div>
+    </main>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="/scripts/main.js"></script>
+</html>
